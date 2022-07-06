@@ -25,7 +25,7 @@ body {
   flex-direction: column;
   justify-content: center;
   border: 2px solid rgba(0, 0, 0, 0.726);
-  border-radius: 10px;
+  border-radius: 15px;
   width: 600px;
   height: 50vh;
   max-width: 80%;
@@ -37,8 +37,8 @@ body {
   background: rgb(108, 9, 9);
   background: linear-gradient(
     122deg,
-    rgba(108, 9, 9, 0.95) 0%,
-    rgba(0, 0, 0, 0.95) 65%
+    rgba(108, 9, 9, 0.877) 0%,
+    rgba(0, 0, 0, 0.877) 65%
   );
 }
 
@@ -147,7 +147,7 @@ body {
   color: #ccc;
   width: 35px;
   height: 35px;
-  border-radius: 10px;
+  border-radius: 8px;
   margin-bottom: 1.5rem;
   display: flex;
   align-items: center;
