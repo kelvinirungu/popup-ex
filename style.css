@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;800&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px solid rgba(0, 0, 0, 0.726);
+  border-radius: 10px;
+  width: 600px;
+  height: 50vh;
+  max-width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  background: rgb(108, 9, 9);
+  background: linear-gradient(
+    122deg,
+    rgba(108, 9, 9, 0.95) 0%,
+    rgba(0, 0, 0, 0.95) 65%
+  );
+}
+
+.card-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  color: crimson;
+}
+
+.card-body {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 1rem;
+  gap: 2rem;
+  position: relative;
+}
+
+.card-img {
+  width: 190px;
+  height: 180px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  margin-top: 1rem;
+}
+
+.card-desc {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.btn {
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background: crimson;
+  color: white;
+  width: 120px;
+  white-space: nowrap;
+  margin-top: 1.5rem;
+  transition: 0.3s all ease-in-out;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.btn:hover {
+  background: rgb(182, 144, 94);
+  color: black;
+}
+.btn:active {
+  background: rgb(173, 122, 54);
+}
+
+.popup {
+  border: 2px solid rgba(0, 0, 0, 0.925);
+  border-radius: 15px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 0.4s ease-in-out;
+  width: 650px;
+  height: 60vh;
+  background: black;
+}
+
+.popup.active {
+  transform: translate(-50%, -50%) scale(1);
+  transition: 0.4s ease-in-out;
+}
+
+.popup-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.8rem;
+  border-bottom: 1px solid crimson;
+  color: crimson;
+  text-transform: uppercase;
+}
+
+.popup-title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.close-btn {
+  font-size: 2.7rem;
+  font-weight: 700;
+  background: crimson;
+  color: #ccc;
+  width: 35px;
+  height: 35px;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s all ease-in-out;
+}
+
+.popup-body {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 1.4rem;
+  color: #ccc;
+}
+
+.popup-img {
+  width: 250px;
+  height: 270px;
+}
+
+.popup-desc {
+  padding: 0.75rem 1.2rem;
+  margin-right: 1rem;
+  margin-top: 2.5rem;
+}
+
+.desc-text {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.popup-btns {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.cart-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 40px;
+  width: 145px;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.buy-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 40px;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.fa-cart-arrow-down {
+  font-size: 1.6rem;
+}
